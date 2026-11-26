@@ -1,0 +1,64 @@
+{
+  "grid": {
+    "rows": 3,
+    "columns": 3
+  },
+  "baseline_seconds": 30,
+  "memory_seconds": 60,
+  "speed_window_seconds": 1.0,
+  "frame_skip": 1,
+  "model": "yolov8n.pt",
+  "tracker": "bytetrack.yaml",
+  "weights": {
+    "density": 0.35,
+    "speed_drop": 0.25,
+    "counterflow": 0.25,
+    "chaos": 0.15
+  },
+  "thresholds": {
+    "low_risk": 40,
+    "high_risk": 70,
+    "min_move_px_s": 12,
+    "stationary_speed_px_s": 8,
+    "crowd_high_z": 1.5,
+    "speed_drop_z": 1.0,
+    "counterflow_high": 0.35,
+    "chaos_high": 0.55,
+    "panic_speed_multiple": 1.8,
+    "panic_min_tracks": 3,
+    "wrong_way_seconds": 3,
+    "fallen_still_seconds": 5,
+    "fallen_speed_px_s": 12,
+    "restricted_high_risk": 85,
+    "merge_seconds": 10,
+    "abandoned_seconds": 60,
+    "person_clearance_px": 120,
+    "loiter_seconds": 30,
+    "loiter_radius_px": 50
+  },
+  "zone_names": [
+    "North Entry",
+    "Queue",
+    "West Walkway",
+    "South Walkway",
+    "Gate 4",
+    "Concourse",
+    "Exit Lane",
+    "Gate 2",
+    "East Walkway"
+  ],
+  "capacities": [150, 150, 150, 150, 150, 180, 160, 150, 150],
+  "zones": [
+    {"gate": false, "sensitive": false},
+    {"gate": false, "sensitive": false},
+    {"gate": false, "sensitive": false},
+    {"gate": false, "sensitive": false},
+    {"gate": true, "sensitive": true},
+    {"gate": false, "sensitive": false},
+    {"gate": true, "sensitive": false},
+    {"gate": true, "sensitive": true},
+    {"gate": false, "sensitive": false}
+  ],
+  "restricted_polygons": [],
+  "anthropic_model": "claude-3-5-haiku-latest"
+}

@@ -1,0 +1,22 @@
+{
+  "grid": {
+    "rows": 3,
+    "columns": 3
+  },
+  "zone_names": [
+    "North Entry",
+    "Queue",
+    "West Walkway",
+    "South Walkway",
+    "Gate 4",
+    "Concourse",
+    "Exit Lane",
+    "Gate 2",
+    "East Walkway"
+  ],
+  "capacities": [150, 150, 150, 150, 150, 180, 160, 150, 150],
+  "thresholds": {
+    "low_risk": 40,
+    "high_risk": 70
+  }
+}
